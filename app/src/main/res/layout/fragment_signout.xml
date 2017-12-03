@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:src="@drawable/logo_1"
+            android:layout_gravity="center_horizontal" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/profile_photo"
+            android:layout_marginTop="80dp"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="2dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:id="@+id/display_name"
+            android:layout_below="@+id/profile_photo"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/grey"
+            android:textSize="16sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:text="You are Loging out Please Come Back Have a nice day."
+            android:gravity="center"
+            android:textSize="25px"
+            android:id="@+id/link_signup"
+            android:textColor="@color/grey"
+            android:layout_weight="600"
+            android:layout_below="@+id/display_name"
+            android:layout_marginTop="40dp" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:layout_marginBottom="25dp"
+        android:text="Log Out"
+        android:padding="12dp"
+        android:background="@drawable/animation_list"
+        android:textColor="#ffffff"
+        android:layout_marginHorizontal="12dp"
+        android:id="@+id/btnConfirmSignout"/>
+
+</RelativeLayout>
+
+
